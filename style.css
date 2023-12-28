@@ -1,0 +1,146 @@
+body {
+   margin: 0%;
+}
+
+header {
+   font-size: 20px;
+   background-color: rgb(14, 14, 14);
+   /* Цвет фона шапки */
+   color: rgb(255, 255, 255);
+   /* Цвет текста в шапке */
+   font-family: 'Didact Gothic', sans-serif;
+   /* Шрифт */
+   padding: 20px 30px;
+   /* Внутренние отступы шапки */
+   display: flex;
+   /* Используем flexbox для выравнивания элементов */
+   justify-content: space-between;
+   align-items: center;
+   height: 150px;
+
+   box-shadow: 0 40px 100px black;
+   position: sticky ;
+   z-index: 1;
+
+}
+
+
+.logoimg {
+   border-radius: 50%;
+
+}
+
+header a {
+   color: #ffffff;
+   text-decoration: none;
+   font-size: 20px;
+}
+
+.fluffy {
+   font-size: 150%;
+   text-transform: uppercase;
+}
+
+nav {
+   display: flex;
+   align-items: center;
+
+}
+
+/* Стили для Избранного*/
+header nav a.favorites {
+   background: url(img/Рисунок01.png)
+      /* Путь к файлу с исходным рисунком  */
+      center center/40px 40px no-repeat;
+   display: flex;
+   width: 40px;
+   height: 40px;
+   padding: 7px;
+}
+
+header nav a.favorites:hover {
+   background: url(img/Рисунок02.png) center center/40px 40px no-repeat;
+   background-color: rgb(255, 255, 255);
+   padding: 7px;
+   border-radius: 50%;
+}
+
+/*  Стили для корзины*/
+header nav a.basket {
+   background: url(img/КорзинаБ.png)
+      /* Путь к файлу с исходным рисунком  */
+      center center/50px 50px no-repeat;
+   display: flex;
+   width: 50px;
+   height: 50px;
+   padding: 1px;
+}
+
+header nav a.basket:hover {
+   background: url(img/КорзинаЧ.png) center center/50px 50px no-repeat;
+   background-color: rgb(255, 255, 255);
+   padding: 1px;
+   border-radius: 50%;
+}
+
+
+.fullscreen-image {
+   width: 100%;
+   height: 200vh;
+   background-image: url("img/фон.jpg");
+   background-size: cover;
+   background-position: center;
+   position: relative;
+}
+
+.overlay {
+
+   background-color: rgba(0, 0, 0, 0.5);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.overlay h1 {
+
+   font-size: 36px;
+   color: #fff;
+   text-align: center;
+}
+
+.btn-more {
+   background-color: #fff;
+   color: rgb(14, 14, 14);
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+footer {
+   font-size: 40px;
+   background-color: rgb(14, 14, 14);
+   /* Цвет фона шапки */
+   color: rgb(255, 255, 255);
+   /* Цвет текста в шапке */
+   font-family: 'Didact Gothic', sans-serif;
+   /* Шрифт */
+   padding: 20px 30px;
+   /* Внутренние отступы шапки */
+   display: flex;
+   /* Используем flexbox для выравнивания элементов */
+   justify-content: center;
+   height: 150px;
+
+
+   box-shadow: 0 -40px 100px black;
+   position: sticky ;
+   z-index: 2;
+}
